@@ -1,5 +1,5 @@
-  $(document).ready(function(){
-    $('#artistRateDiv').hide();
+$(document).ready(function(){
+  $('#artistRateDiv').hide();
 
   });
   $('button').on('click', function(){
@@ -51,6 +51,7 @@ $.ajax({
 
       database.ref().set({
 rating: $('select').val()
+// review: $('#writtenReview').val()
 });
 });
 
