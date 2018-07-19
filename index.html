@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rate Your Music</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div id="title" class = "jumbotron text-center">
+    <h1>Rate Your Music</h1>
+</div>
+
+<div id="contentOnPage" class="container">
+        <div class="row">
+
+        <div class="col-sm-4" class = "homePageButtons">
+
+            <img src = "assets/images/prince.jpg" class = "img-rounded" alt= "prince">
+            <!-- <h3>Search an Artist</h3> -->
+            <form>
+              <input type="text" id="inputBand" placeholder="Search an Artist">
+              <button type="submit" id="artistSearch">go!</button>
+            </form>
+
+        </div>
+
+          <div class="col-sm-4" class = "homePageButtons">
+
+            <img src = "assets/images/theBeatles.jpg" class="img-rounded" alt="theBeatles">
+            <!-- <h3 class = "centered">Search a Band</h3> -->
+            <form>
+
+            <input type="text" id="inputBand" placeholder="Search a Band">
+            <button type="submit" id="artistSearch">go!</button>
+            </form>
+
+          </div>
+
+          <div class="col-sm-4" class = "homePageButtons">
+              <!-- //add a src for the image file OR use js to populate?  -->
+            <img src = "assets/images/simonCowell.jpg" class = "img-rounded" alt="simonCowell">
+            <!-- <h3>Rate the talent</h3> -->
+            <form>
+
+            <input type="text" id="inputBand" placeholder="Rate the talent">
+            <button type="submit" id="artistSearch">go!</button>
+            </form>
+
+
+            <div class="col-sm-8" id="bandInfo">
+
+            <p id="poster"><img id="image"></img></p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+        <div class="hidden" id="artistRateDiv">
+          <form>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+
+            <button>submit rating</button>
+          </form>
+
+          <form>
+            <input id="writtenReview" placeholder="Give us Deets">
+            <button>share the tea</button>
+          </form>
+      </div>
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script rel="stylesheet" type="text/javascript" src="assets/javascript/app.js"/>
+</script>
+
+
+
+</html>
