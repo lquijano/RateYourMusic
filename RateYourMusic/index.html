@@ -129,68 +129,34 @@
           <button type="submit" id="artistSearch">go!</button>
         </form>
       </div>
-      <div class="col-sm-4" class="homePageButtons">
-
-        <img src="assets/images/prince.jpg" class="img-rounded" alt="prince">
-        <!-- <h3>Search an Artist</h3> -->
-
-
-      </div>
-
-      <div class="col-sm-4" class="homePageButtons">
-
-        <img src="assets/images/theBeatles.jpg" class="img-rounded" alt="theBeatles">
-        <!-- <h3 class = "centered">Search a Band</h3> -->
-        <form>
-
-          <input type="text" id="inputBand" placeholder="Search a Band">
-          <button type="submit" id="artistSearch">go!</button>
-        </form>
-
-      </div>
-
-      <div class="col-sm-4" class="homePageButtons">
-        <!-- //add a src for the image file OR use js to populate?  -->
-        <img src="assets/images/simonCowell.jpg" class="img-rounded" alt="simonCowell">
-        <!-- <h3>Rate the talent</h3> -->
-        <form>
-
-          <input type="text" id="inputBand" placeholder="Rate the talent">
-          <button type="submit" id="artistSearch">go!</button>
-        </form>
-
-
-        <div class="col-sm-8" id="bandInfo">
-
-          <p id="poster">
-            <img id="image"></img>
-          </p>
-
-        </div>
-      </div>
-
     </div>
-  </div>
 
-  <div class="hidden" id="artistRateDiv">
-    <form>
-      <select>
-        <option>1 - They Need To Just Stop...</option>
-        <option>2 - Meh.</option>
-        <option>3 - They're Alright</option>
-        <option>4 - They're Prett Damn Good</option>
-        <option>5 - I LOVE THEM!!</option>
-      </select>
+    <!-- /////////////////////// The displayed result -->
+     <div class="container">
+      <div id="artistRateDiv">
+          <p id="poster">
+              <img id="image"></img>
+            </p>
+        <form id = "displayForm">
+          <select>
+            <option>1 - They Need To Just Stop...</option>
+            <option>2 - Meh.</option>
+            <option>3 - They're Alright</option>
+            <option>4 - They're Prett Damn Good</option>
+            <option>5 - I LOVE THEM!!</option>
+          </select>
 
-      <button>submit rating</button>
-    </form>
+          <button>submit rating</button>
+        </form>
 
-    <form>
-      <input id="writtenReview" placeholder="Give us Deets">
-      <button>share the tea</button>
-    </form>
-  </div>
-  create a nice stylized div with shadows in a div row with ~3 col and have each part filled by jquery.
+        <form>
+          <input id="writtenReview" placeholder="Give us Deets">
+          <button>share the tea</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- create a nice stylized div with shadows in a div row with ~3 col and have each part filled by jquery. -->
 
 </body>
 
