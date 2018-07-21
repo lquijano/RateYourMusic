@@ -1,0 +1,56 @@
+button {
+  border-radius: 25%;
+  background-color: darkgray;
+}
+
+#inputBand {
+  border-radius: 10%;
+  border: 1px solid darkgray;
+}
+
+#displayForm {
+  text-align: center;
+}
+
+#artistRateDiv {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  /* box-shadow: 5px 5px black; */
+  border-radius: 25%;
+}
+
+#title {
+  font-family: Lucida Console, Courier, monospace;
+  background-color: black;
+}
+
+body {
+   background-image: url(../images/full-bloom.png);
+   color: white;
+  }
+
+h1 {
+  text-shadow: 2px 2px black;
+}
+
+#contentOnPage {
+  font-style: normal;
+  font-size: 15px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 15px;
+  text-indent: 30px;
+
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#writtenReview {
+  height: 200px;
+  width: 400px;
+}
