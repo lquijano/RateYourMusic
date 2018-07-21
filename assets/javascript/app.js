@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+  var name;
+  var fans;
+  var poster;
+  var image;
+
   $('#artistRateDiv').hide();
 
   });
@@ -16,10 +22,10 @@ $.ajax({
 }).then(function(response) {
     console.log(response);
 
-    var name = response.name;
-    var fans = response.tracker_count;
-    var poster = response.image_url;
-    var image = $('#image').attr({
+    name = response.name;
+    fans = response.tracker_count;
+    poster = response.image_url;
+    image = $('#image').attr({
       'src': poster,
       'width' : '200',
       'height' : '200'
@@ -48,14 +54,14 @@ $.ajax({
 
   $('button').on('click', function(){
       event.preventDefault();
-
-      database.ref().set({
-rating: $('select').val()
-// review: $('#writtenReview').val()
-});
+      debugger;
+      database.ref(name).push({
+        rating: $('select').val(),
+        review: $('#writtenReview').val()
+      });
 });
 
 database.ref().on("value", function(snapshot) {
 $('span').text(snapshot.val().rating);
 
-  });
+});
